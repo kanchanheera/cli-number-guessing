@@ -2,7 +2,7 @@
 import inquirer from "inquirer";
 // 1) Computer will generate a random number - Done
 // 2) User input for guessing numbers - Done
-// 3) Compare user input with computer generated number & show result
+// 3) Compare user input with computer generated number & show result - Done
 const randomNumber = Math.floor(Math.random() * 6 + 1);
 const answers = await inquirer.prompt([
     {
