@@ -8,7 +8,10 @@ import inquirer from "inquirer"
 
 // 3) Compare user input with computer generated number & show result - Done
 
-const randomNumber = Math.floor(Math.random() * 6 + 1);
+let condition = true;
+while (condition)
+{
+    const randomNumber = Math.floor(Math.random() * 6 + 1);
 
 const answers = await inquirer.prompt([
     {
@@ -22,4 +25,7 @@ if(answers.userGuessedNumber === randomNumber) {
     console.log("Congratulations! You guessed right number.");
 } else {
     console.log("You guessed wrong number.");
-}
+
+    condition = answers.userGuessedNumber
+}}
+
